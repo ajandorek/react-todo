@@ -1,12 +1,10 @@
 import firebase from 'firebase';
 
 var config = {
-    apiKey: "AIzaSyASfR-XgOhdEBgIUrgOtRgscW420GL1NGg",
-    authDomain: "jandorek-todo-app.firebaseapp.com",
-    databaseURL: "https://jandorek-todo-app.firebaseio.com",
-    projectId: "jandorek-todo-app",
-    storageBucket: "jandorek-todo-app.appspot.com",
-    messagingSenderId: "427911417652"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    storageBucket: process.env.STORAGE_BUCKET,
 };
 firebase.initializeApp(config);
 
